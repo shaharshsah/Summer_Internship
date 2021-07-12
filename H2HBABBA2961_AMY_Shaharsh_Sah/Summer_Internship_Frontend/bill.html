@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WORK</title>
+  <link rel="stylesheet" type="text/css" href="roughwork.css" />
+</head>
+
+<body>
+  <div id="modalWrapper">
+    <div class="wrap2">
+      <div id="modal" class="add-invoice">
+        <div class="modal-header">
+          <p>Add Invoice</p>
+          <button>
+            <img id="close-modal-btn" src="/baseline-close-24px.svg" />
+          </button>
+        </div>
+        <div id="modal-form" class="modal-body">
+          <div class="fields">
+            <div>
+              <p>Customer Name <span>*</span></p>
+              <input id="customerName" />
+            </div>
+            <div>
+              <p>Customer No. <span>*</span></p>
+              <input id="customerNum" />
+            </div>
+            <div>
+              <p>Invoice No. <span>*</span></p>
+              <input id="invoiceNo" />
+            </div>
+            <div>
+              <p>Invoice Account <span>*</span></p>
+              <input id="invoiceAmount" />
+            </div>
+          </div>
+          <div class="fields">
+            <div>
+              <p>Due Date <span>*</span></p>
+              <input type="date" id="dueDate" />
+            </div>
+            <div>
+              <p>Notes <span>*</span></p>
+              <textarea id="nodes"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p id="cancel-modal" class="close-text">Cancel</p>
+
+          <div>
+            <button id="clear-modal-field">Clear</button>
+            <button id="final-add-modal-field">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div id="modalWrapper1">
+    <div class="wrap2">
+      <div id="modal" class="edit-invoice">
+        <div class="modal-header">
+          <p>Edit Invoice</p>
+          <button>
+            <img id="close-modal-btn1" src="/baseline-close-24px.svg" />
+          </button>
+        </div>
+        <div id="modal-form1" class="modal-body">
+          <div class="fields">
+
+            <div>
+              <p>Invoice Account <span>*</span></p>
+              <input id="invoiceAmount1" />
+            </div>
+
+
+            <div>
+              <p>Notes <span>*</span></p>
+              <textarea id="nodes1"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <p id="cancel-modal1" class="close-text1">Cancel</p>
+
+          <div>
+            <button id="reset-modal-field1">Reset</button>
+            <button id="save-modal-field1">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="modalWrapper2">
+    <div class="wrap2">
+      <div id="modal" class="delete-invoice">
+        <div class="modal-header">
+          <p>Delete Invoice(s)?</p>
+          <button>
+            <img id="close-modal-btn2" src="/baseline-close-24px.svg" />
+          </button>
+        </div>
+        <div id="modal-form2" class="modal-body">
+          <p class="p">
+            You'll lose your record(s) after this action. We can't recover
+            them once you delete. Are you sure you want to<span style="color: #ff5e5e">permanently</span>
+            delete them?
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div>
+            <button id="cancel-modal-field2">Cancel</button>
+            <button id="delete-modal-field2">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="full">
+    <div class="body1">
+      <img src="Group 20399.svg" id="logo1" />
+      <img src="logo.svg" id="logo2" />
+      <header>
+        <h2 class="invo">Invoice List</h2>
+      </header>
+    </div>
+
+    <div class="body2">
+      <div class="bar">
+        <button class="btn-add" id="add-btn">+ Add</button>
+        <button class="btn-edit" id="btn-edit">
+          / Edit
+        </button>
+        <button class="btn-delete" id="btn-delete">
+          - Delete
+        </button>
+        <input type="text" class="btn" id="myInput" onkeyup="myFunction()" placeholder="search by invoice number" />
+      </div>
+
+
+      <div class="table_main" style="border-radius: 10px;">
+        <table id="tab" class="content-table" width="1800" style="color: #dddddd" cellspacing="0" cellpadding="0">
+          <tr>
+            <th><input type="checkbox" class="checkbox" /></th>
+            <th style="font: normal normal normal 18px/21px Ubuntu; color: #97A1A9; opacity: 1;">Customer name</th>
+            <th style="font: normal normal normal 18px/21px Ubuntu; color: #97A1A9; opacity: 1;">Customer #</th>
+            <th style="font: normal normal normal 18px/21px Ubuntu; color: #97A1A9; opacity: 1;">Invoice #</th>
+            <th style="font: normal normal normal 18px/21px Ubuntu; color: #97A1A9; opacity: 1;">Invoice Amount</th>
+            <th style="font: normal normal normal 18px/21px Ubuntu; color: #97A1A9; opacity: 1;">Due Date</th>
+            <th style="font: normal normal normal 18px/21px Ubuntu; color: #97A1A9; opacity: 1;">Predicted payment date</th>
+            <th style="font: normal normal normal 18px/21px Ubuntu; color: #97A1A9; opacity: 1;">Notes</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="./showTableData.js" crossorigin="anonymous"></script>
+<script type="module" src="./modal.js" crossorigin="anonymous"></script>
+<script type="module" src="./edit.js" crossorigin="anonymous"></script>
+<script type="module" src="./delete.js" crossorigin="anonymous"></script>
+<script>
+  function myFunction() {
+    var input, table, filter, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("tab");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[3];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+
+</script>
+
+
+</html>

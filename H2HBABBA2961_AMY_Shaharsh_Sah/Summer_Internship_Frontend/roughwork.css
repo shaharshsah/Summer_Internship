@@ -1,0 +1,701 @@
+.full {
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 930px;
+  background-color: #58687E;
+  opacity: 1;
+}
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.25rem;
+}
+th{
+  position: sticky;
+  top:0px;
+  opacity: 1;
+
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.invo {
+  margin-left: 16px;
+}
+
+.body1 {
+  background-color: #58687e;
+  width: 1920px;
+  height: 160px;
+  margin: 0px;
+  padding: 0px;
+}
+.invo{
+  text-align: left;
+  font: normal normal normal 28px/32px Ubuntu;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.body2 {
+  background-color: #273D49CC;
+  width: 1860px;
+  height: 739px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  border-radius: 0px;
+  padding: 0px;
+  border-radius: 10px;
+  overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#logo1 {
+  width: 270px;
+  height: 52px;
+  margin: 16px 30px 10px 10px;
+}
+
+#logo2 {
+  width: 234.82px;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 400px;
+}
+
+#tab {
+  height: 600px;
+
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bar {
+  float: right;
+}
+
+.btn {
+  border: 2px solid #97a1a9;
+  background-color: #39495e;
+  width: 95px;
+  height: 45px;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 1;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.btn-add {
+  border: 2px solid #97a1a9;
+  background-color: #39495e;
+  width: 95px;
+  height: 45px;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 1;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.btn-edit {
+  border: 2px solid #97a1a9;
+  background-color: #39495e;
+  width: 95px;
+  height: 45px;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 1;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.btn-delete {
+  border: 2px solid #97a1a9;
+  background-color: #39495e;
+  width: 95px;
+  height: 45px;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 1;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.content-table {
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+.content-table th,
+.content-table td {
+  padding: 10px 5px;
+}
+
+.content-table tbody tr {
+  border-bottom: 0px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #283A46;
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+  background-color: #273D49CC;
+}
+
+
+
+#modalWrapper {
+  height: 100vh;
+  width: 170%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-family: Ubuntu;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+}
+
+#modalWrapper .wrap2 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#modalWrapper .add-invoice {
+  background: #2a3e4c 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 8px 24px #00000029;
+  box-shadow: 0px 8px 24px #00000029;
+  border-radius: 6px;
+  opacity: 1;
+  width: 70%;
+  max-width: 1106px;
+}
+
+#modalWrapper .add-invoice .modal-header {
+  padding: 25px 30px 25px 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font: normal normal normal 24px Ubuntu;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+#modalWrapper .add-invoice .modal-header button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#modalWrapper .add-invoice .modal-body {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 0.25px solid #252525;
+  border-bottom: 0.25px solid #252525;
+}
+
+#modalWrapper .add-invoice .modal-body .fields {
+  width: 100%;
+}
+
+#modalWrapper .add-invoice .modal-body .fields:first-child {
+  margin-right: 30px;
+}
+
+#modalWrapper .add-invoice .modal-body .fields div {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#modalWrapper .add-invoice .modal-body .fields div span {
+  color: #ff5b5b;
+}
+
+#modalWrapper .add-invoice .modal-body .fields div:not(:last-of-type) {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#modalWrapper .add-invoice .modal-body .fields div p {
+  width: 130px;
+  color: #97a1a9;
+}
+
+#modalWrapper .add-invoice .modal-body .fields div input,
+#modalWrapper .add-invoice .modal-body .fields div textarea {
+  width: 100%;
+  background: #283a46 0% 0% no-repeat padding-box;
+  border: 1px solid #356680;
+  border-radius: 10px;
+  resize: none;
+  max-width: 300px;
+  outline: none;
+  color: #fff;
+  font: normal normal normal 16px/20px Ubuntu;
+  padding: 15px;
+}
+
+#modalWrapper .add-invoice .modal-body .fields div input {
+  height: 10px;
+}
+
+#modalWrapper .add-invoice .modal-body .fields div textarea {
+  height: 191px;
+}
+
+#modalWrapper .add-invoice .modal-footer {
+  padding: 25px 30px 25px 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Ubuntu;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+#modalWrapper .add-invoice .modal-footer .close-text {
+  cursor: pointer;
+  color: #14aff1;
+}
+
+#modalWrapper .add-invoice .modal-footer div button {
+  font: normal normal normal 16px/20px Ubuntu;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 12px 10px 12px;
+  outline: none;
+  margin-left: 10px;
+  width: 77px;
+  cursor: pointer;
+}
+
+#modalWrapper .add-invoice .modal-footer div button:first-child {
+  background-color: transparent;
+  border: 1px solid #14aff1;
+}
+
+#modalWrapper .add-invoice .modal-footer div button:last-of-type {
+  border: none;
+  background: #14aff1 0% 0% no-repeat padding-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#modalWrapper1 {
+  height: 100vh;
+  width: 170%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-family: Ubuntu;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+}
+
+#modalWrapper1 .wrap2 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#modalWrapper1 .edit-invoice {
+  background: #2a3e4c 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 8px 24px #00000029;
+  box-shadow: 0px 8px 24px #00000029;
+  border-radius: 6px;
+  opacity: 1;
+  width: 70%;
+  max-width: 1106px;
+}
+
+#modalWrapper1 .edit-invoice .modal-header {
+  padding: 25px 30px 25px 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font: normal normal normal 24px Ubuntu;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+#modalWrapper1 .edit-invoice .modal-header button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#modalWrapper1 .edit-invoice .modal-body {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 0.25px solid #252525;
+  border-bottom: 0.25px solid #252525;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields {
+  width: 100%;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields:first-child {
+  margin-right: 30px;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields div {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields div span {
+  color: #ff5b5b;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields div:not(:last-of-type) {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields div p {
+  width: 130px;
+  color: #97a1a9;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields div input,
+#modalWrapper1 .edit-invoice .modal-body .fields div textarea {
+  width: 100%;
+  background: #283a46 0% 0% no-repeat padding-box;
+  border: 1px solid #356680;
+  border-radius: 10px;
+  resize: none;
+  max-width: 300px;
+  outline: none;
+  color: #fff;
+  font: normal normal normal 16px/20px Ubuntu;
+  padding: 15px;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields div input {
+  height: 10px;
+}
+
+#modalWrapper1 .edit-invoice .modal-body .fields div textarea {
+  height: 191px;
+}
+
+#modalWrapper1 .edit-invoice .modal-footer {
+  padding: 25px 30px 25px 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Ubuntu;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+#modalWrapper1 .edit-invoice .modal-footer .close-text {
+  cursor: pointer;
+  color: #14aff1;
+}
+
+#modalWrapper1 .edit-invoice .modal-footer div button {
+  font: normal normal normal 16px/20px Ubuntu;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 12px 10px 12px;
+  outline: none;
+  margin-left: 10px;
+  width: 77px;
+  cursor: pointer;
+}
+
+#modalWrapper1 .edit-invoice .modal-footer div button:first-child {
+  background-color: transparent;
+  border: 1px solid #14aff1;
+}
+
+#modalWrapper1 .edit-invoice .modal-footer div button:last-of-type {
+  border: none;
+  background: #14aff1 0% 0% no-repeat padding-box;
+}
+
+
+
+
+
+
+
+
+#modalWrapper2 {
+  height: 100vh;
+  width: 170%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-family: Ubuntu;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+}
+
+#modalWrapper2 .wrap2 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#modalWrapper2 .delete-invoice {
+  background: #2a3e4c 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 8px 24px #00000029;
+  box-shadow: 0px 8px 24px #00000029;
+  border-radius: 6px;
+  opacity: 1;
+  width: 70%;
+  max-width: 1106px;
+}
+
+#modalWrapper2 .delete-invoice .modal-header {
+  padding: 25px 30px 25px 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font: normal normal normal 24px Ubuntu;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+#modalWrapper2 .delete-invoice .modal-header button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#modalWrapper2 .delete-invoice .modal-body {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 0.25px solid #252525;
+  border-bottom: 0.25px solid #252525;
+}
+
+#modalWrapper2 .delete-invoice .modal-body .fields {
+  width: 100%;
+}
+
+#modalWrapper2 .delete-invoice .modal-body .fields:first-child {
+  margin-right: 30px;
+}
+
+#modalWrapper2 .delete-invoice .modal-body .fields div {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#modalWrapper2 .delete-invoice .modal-body .fields div span {
+  color: #ff5b5b;
+}
+
+#modalWrapper2 .delete-invoice .modal-body .fields div:not(:last-of-type) {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#modalWrapper2 .delete-invoice .modal-body .fields div p {
+  width: 130px;
+  color: #97a1a9;
+}
+
+/* #modalWrapper2 .delete-invoice .modal-body .fields div input,
+#modalWrapper2 .delete-invoice .modal-body .fields div textarea {
+  width: 100%;
+  background: #283a46 0% 0% no-repeat padding-box;
+  border: 1px solid #356680;
+  border-radius: 10px;
+  resize: none;
+  max-width: 300px;
+  outline: none;
+  color: #fff;
+  font: normal normal normal 16px/20px Ubuntu;
+  padding: 15px;
+} */
+
+/* #modalWrapper2 .delete-invoice .modal-body .fields div input {
+  height: 10px;
+}
+
+#modalWrapper2 .delete-invoice .modal-body .fields div textarea {
+  height: 191px;
+} */
+
+#modalWrapper2 .delete-invoice .modal-footer {
+  padding: 25px 90px 15px 820px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Ubuntu;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+#modalWrapper2 .delete-invoice .modal-footer .close-text {
+  cursor: pointer;
+  color: #14aff1;
+}
+
+#modalWrapper2 .delete-invoice .modal-footer div button {
+  font: normal normal normal 16px/20px Ubuntu;
+  
+  border-radius: 10px;
+  padding: 10px 12px 10px 12px;
+  outline: none;
+  margin-left: 10px;
+  width: 77px;
+  cursor: pointer;
+}
+
+#modalWrapper2 .delete-invoice .modal-footer div button:first-child {
+  background-color: transparent;
+  border: 1px solid #14aff1;
+}
+
+#modalWrapper3 .delete-invoice .modal-footer div button:last-of-type {
+  border: none;
+  background: #14aff1;
+}
+
+
+
